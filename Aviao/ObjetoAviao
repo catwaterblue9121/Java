@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class ObjetoAviao {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Aviao a1 = new Aviao();
+
+        System.out.println("\n--- CADASTRO DE AVIÃO ---");
+
+        System.out.print("Digite o tipo: ");
+        a1.setTipo(sc.nextLine());
+
+        System.out.print("Digite a cor: ");
+        a1.setCor(sc.nextLine());
+
+        System.out.print("Digite a velocidade: ");
+        a1.setVelocidade(sc.nextDouble());
+
+        System.out.print("Digite a quantidade de assentos: ");
+        p1.setQtdeAssento(sc.nextInt());
+
+        System.out.println("\n--- DADOS ---");
+        System.out.println("Tipo: " + a1.getTipo());
+        System.out.println("Cor: " + a1.getCor());
+        System.out.println("Velocidade: " + a1.getvelocidade());
+        System.out.println("Quantidade de assentos: " + a1.getQtdeAssento());
+        System.out.println("\nCadastro realizado com sucesso!");
+
+        sc.close();
+    }
+}
